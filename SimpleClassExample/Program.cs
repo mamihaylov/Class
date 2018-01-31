@@ -13,19 +13,18 @@ namespace SimpleClassExample
             Console.WriteLine("****Fun with Class types****\n");
             // разместить в памяти и сконфигурировать обьект Car.
             Car myCar = new SimpleClassExample.Car();
-            myCar = new Car();
-            myCar.petName = "henry";
-            myCar.currSpeed = 10;
-            // Увеличить скорость автомобиля в несколько раз и вывести новое состояние.
-            for (int i=0; i<= 10; i++)
-            {
-                myCar.SpeedUp(5);
-                myCar.PrintState();
-            }
-            Console.ReadLine();
+           
+            // Создать обьект  Car по именя Chuck со скоростью 10 миль в час.
             Car chuck = new Car();
-            //Выводит "Chuck is going 10 mph"
             chuck.PrintState();
+            // Создать обьект  Car по именя Mary со скоростью 0 миль в час.
+            Car mary = new Car("Mary");
+            mary.PrintState();
+            // Создать обьект  Car по именя Daisy со скоростью 75 миль в час.
+            Car daisy = new Car("Daisy", 75);
+            daisy.PrintState();
+            Console.ReadLine();
+
         }
     }
 }

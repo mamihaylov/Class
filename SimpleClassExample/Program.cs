@@ -23,6 +23,12 @@ namespace SimpleClassExample
             // Создать обьект  Car по именя Daisy со скоростью 75 миль в час.
             Car daisy = new Car("Daisy", 75);
             daisy.PrintState();
+            
+
+            Books book1 = new Books("Programmig C++",12);
+            book1.PrintState();
+            Books book2 = new Books("Programmig Java Scripts", 8);
+            book2.PrintState();
             Console.ReadLine();
 
         }

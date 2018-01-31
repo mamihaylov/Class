@@ -23,6 +23,9 @@ namespace SimpleClassExample
                 myCar.PrintState();
             }
             Console.ReadLine();
+            Car chuck = new Car();
+            //Выводит "Chuck is going 10 mph"
+            chuck.PrintState();
         }
     }
 }

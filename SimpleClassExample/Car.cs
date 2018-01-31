@@ -10,7 +10,12 @@ namespace SimpleClassExample
     { // 'Состояние ' обьекта car.
         public string petName;
         public int currSpeed;
-        // Специальный стандартный конструктор.
+        // стандартный конструктор.
+        public Car()
+        {
+            petName   = "Chuck";
+            currSpeed = 10;
+        }
 
         // Функциональность car
         public void PrintState()

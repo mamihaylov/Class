@@ -10,8 +10,15 @@ namespace SimpleClassExample
     {
         public string bookname;
         public int bookprace;
-       
-        public Books () { }
+       // Конструктор необязательных аргументов.
+       public Books (int prace =0, string name = "")
+        {
+            if (prace > 12)
+            { prace = 12; }
+            bookprace = prace;
+            bookname = name;
+        }
+        /*public Books () { }
         public Books(int bookprace)
             : this("", bookprace) { }
         public Books (string bookname)
@@ -26,7 +33,7 @@ namespace SimpleClassExample
 
 
             this.bookname = bookname;
-           }
+           }*/
         // Функционал.
         public void PrintState()
         {

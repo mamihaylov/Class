@@ -25,9 +25,9 @@ namespace SimpleClassExample
             daisy.PrintState();
             
 
-            Books book1 = new Books("Programmig C++",12);
+            Books book1 = new Books(12,"Programmig C++");
             book1.PrintState();
-            Books book2 = new Books("Programmig Java Scripts", 8);
+            Books book2 = new Books(8,"Programmig Java Scripts");
             book2.PrintState();
            
             

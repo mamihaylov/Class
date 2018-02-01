@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleClassExample", "Simpl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticDataAndMembers", "StaticDataAndMembers\StaticDataAndMembers.csproj", "{F59A7B29-53F1-4187-93A6-ABDED622F903}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleUtilityClass", "SimpleUtilityClass\SimpleUtilityClass.csproj", "{E1106902-8668-4325-8955-08AEB19EE76F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F59A7B29-53F1-4187-93A6-ABDED622F903}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F59A7B29-53F1-4187-93A6-ABDED622F903}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F59A7B29-53F1-4187-93A6-ABDED622F903}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1106902-8668-4325-8955-08AEB19EE76F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1106902-8668-4325-8955-08AEB19EE76F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1106902-8668-4325-8955-08AEB19EE76F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1106902-8668-4325-8955-08AEB19EE76F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

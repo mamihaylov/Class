@@ -17,6 +17,14 @@ namespace StaticDataAndMembers
         {
             currBalance = balance;
         }
-        
+        // Статическое члены для установки/получение процентной ставки.
+        public static void SetInterestRase(double newRate)
+        {
+            currInterestRate = newRate;  
+        }
+        public static double GetInterestRase()
+        {
+            return currInterestRate;
+        }
     }
 }

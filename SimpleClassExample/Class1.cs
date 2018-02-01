@@ -10,22 +10,23 @@ namespace SimpleClassExample
     {
         public string bookname;
         public int bookprace;
-        // Получение стандартного значение int для bookprace.
-        public Books(string bp)
+       
+        public Books () { }
+        public Books(int bookprace)
+            : this("", bookprace) { }
+        public Books (string bookname)
+            : this(bookname ,0) { }
+        
+        // Главный констуктор.
+        public Books (string bookname, int bookprase)
         {
-            bookname = bp;
-        }
-        // Установливает полное состояние Books.
-        public Books(string bp, int cs)
-        {
-            bookname = bp;
-            bookprace = cs;
+            // Акция все книги не дороже 12$
+            if (bookprace > 12)
+            { bookprace = 12; }
 
-        }
-        public Books(int cs)
-        {
-            bookprace = cs;
-        }
+
+            this.bookname = bookname;
+           }
         // Функционал.
         public void PrintState()
         {

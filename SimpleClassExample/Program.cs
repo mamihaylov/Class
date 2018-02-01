@@ -29,8 +29,13 @@ namespace SimpleClassExample
             book1.PrintState();
             Books book2 = new Books("Programmig Java Scripts", 8);
             book2.PrintState();
+           
+            // Усадим на Motorcrycle байкера по именя Tiny
+            Motocrycle c = new Motocrycle(5);
+            c.SetDriverName("tiny");
+            c.PopAWheely();
+            Console.WriteLine("Rider name is {0}", c.name); //Выводит пустое значение name.
             Console.ReadLine();
-
         }
     }
 }

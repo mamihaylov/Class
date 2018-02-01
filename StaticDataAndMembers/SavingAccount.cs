@@ -26,5 +26,10 @@ namespace StaticDataAndMembers
         {
             return currInterestRate;
         }
+        static SavingAccount ()
+        {
+            Console.WriteLine("In static ctor!");
+            currInterestRate = 0.04;
+        }
     }
 }

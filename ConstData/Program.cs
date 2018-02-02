@@ -11,10 +11,11 @@ namespace ConstData
         static void Main(string[] args)
         {
             Console.WriteLine("**** Fun with Const***\n");
-            Console.WriteLine("The value of PI is {0}", MyMathClass.PI);
-            // ошибка ! нельзя именять константу.
-            MyMathClass.PI = 3.14444;
+            // константа А
+            Console.WriteLine("The value of A is {0}", Constants.A);
+            Console.WriteLine("The value of B is {0}", Constants.B);
             Console.ReadLine();
+
         }
     }
 }

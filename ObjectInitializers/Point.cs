@@ -10,17 +10,20 @@ namespace ObjectInitializers
     {
         public int X { get; set; }
         public int Y { get; set; }
-        public Point (int xVal, int YVal)
+
+        public string Color { get; set; }
+        public Point (int xVal, int YVal,string cl)
         {
             X = xVal;
-            Y = YVal; 
+            Y = YVal;
+            Color = cl;
         }
         // Конструктор
         public Point () { }
 
         public void DisplayStats()
         {
-            Console.WriteLine("[{0},{1}]", X, Y);
+            Console.WriteLine("[{0},{1},{3}]", X, Y,Color);
         }
     }
 }

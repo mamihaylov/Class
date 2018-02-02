@@ -18,9 +18,12 @@ namespace EmployeeApp
             // Использовать методы get/set ждя взаимодействия с именем обьекта.
             emp.SetName("Marv");
             Console.WriteLine("Employee is named: {0} ", emp.GetName());
-            Console.ReadLine(); 
-            
+            Console.ReadLine();
 
+            // Создаем joe
+            Employee joe = new Employee();
+            joe.Age++; // Упращенние записи "joe.setAge(joe.GetAge() + 1;"
+            Console.ReadLine();
         }
     }
 }

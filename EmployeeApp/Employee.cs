@@ -12,13 +12,23 @@ namespace EmployeeApp
         private string empName;
         private int empID;
         private float currPay;
+        private int empAge;
+        //Свойство
+        public int Age
+        {
+            get { return empAge; }
+            set { empAge = value; }
+        }
         
-        // Конструкторы.
+        // Конструкторы .
         public Employee () { }
         public Employee (string name, int id, float pay)
+            :this(name, 0, id, pay) { } // ссылаемся на гл.конструктор.
+        public Employee (string name, int age,int id, float pay)
         {
             empName = name;
             empID = id;
+            empAge = age; 
             currPay = pay;
         }
         //Методы.
@@ -26,10 +36,11 @@ namespace EmployeeApp
         {
             currPay += amount;
         }
-        public void DisplayStats()
+        public void DisplayStats() // Обнавленный.
         {
             Console.WriteLine("Name: {0}", empName);
             Console.WriteLine("ID: {0}", empID);
+            Console.WriteLine("Age: {0}", empAge); // Учитываем возраст.
             Console.WriteLine("Pay: {0}", currPay);
         
         }

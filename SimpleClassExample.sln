@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeApp", "EmployeeApp\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoProps", "AutoProps\AutoProps.csproj", "{AE75CE50-9F39-4283-AF40-9B15757105CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectInitializers", "ObjectInitializers\ObjectInitializers.csproj", "{2C5D903F-102C-4434-A0E5-EBF870F72641}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{AE75CE50-9F39-4283-AF40-9B15757105CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE75CE50-9F39-4283-AF40-9B15757105CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE75CE50-9F39-4283-AF40-9B15757105CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C5D903F-102C-4434-A0E5-EBF870F72641}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C5D903F-102C-4434-A0E5-EBF870F72641}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C5D903F-102C-4434-A0E5-EBF870F72641}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C5D903F-102C-4434-A0E5-EBF870F72641}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

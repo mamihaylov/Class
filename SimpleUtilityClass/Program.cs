@@ -11,7 +11,7 @@ namespace SimpleUtilityClass
         static void Main(string[] args)
         {
             TimeUtilClass.PrintDate();
-            TimeUtilClass.PrintTime();
+            TimeUtilClass.PrintTime();//s
         }
     }
 }

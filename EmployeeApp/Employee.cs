@@ -33,5 +33,20 @@ namespace EmployeeApp
             Console.WriteLine("Pay: {0}", currPay);
         
         }
+        // Метод доступа ( Get )
+        public string GetName()
+        {
+            return empName;
+        }
+        // метод изменения ( Set )
+        public void SetName(string name)
+        {
+            if (name.Length > 15)
+                //Ошибка, имя должно иметь меньше 16 символов.
+                Console.WriteLine("Error! Name must be less than 16 characters!");
+            else
+                empName = name;
+        }
+        
     }
 }

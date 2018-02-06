@@ -14,7 +14,8 @@ namespace Employees
             
             Manager chucky = new Manager("Chucky",50, 92 , 100000 , "333-23-2322", 9000);
             Console.ReadLine();
-
+            PTSalesPerson TestPTSP = new PTSalesPerson("Alex", 24, 93, 500000, "1337-1337", 4000, 4);
+            Console.WriteLine("SalesPerson {0} works {1} hours / day", TestPTSP.Name, TestPTSP.WorkHours);
 
 
         }

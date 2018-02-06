@@ -45,6 +45,17 @@ namespace Employees
             empAge = age;
             currPay = pay;
         }
+
+        // Сотрудники имеют льготы.
+        protected BenefitPackage empBenefits = new BenefitPackage();
+        public double GetBenefitCost()
+        { return empBenefits.ComputePayDeduction(); }
+
+        public BenefitPackage Benefits
+        {
+            get { return empBenefits; }
+            set { empBenefits = value; }
+        }
     }
 
        

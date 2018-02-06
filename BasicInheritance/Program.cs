@@ -16,6 +16,12 @@ namespace BasicInheritance
             //Установить текущую скорость и вывести е ена консоль.
             myCar.Speed = 50;
             Console.WriteLine("My car is going {0} MPH", myCar.Speed);
+            
+
+            //Создаем обьект MiniVan.
+            MiniVan myVan = new MiniVan();
+            myVan.Speed  = 10;
+            Console.WriteLine("My van is going {0} MPH", myVan.Speed);
             Console.ReadLine();
 
         }

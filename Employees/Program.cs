@@ -13,9 +13,13 @@ namespace Employees
             Console.WriteLine("**** The Employee Class Hierarchy***\n");
             
             Manager chucky = new Manager("Chucky",50, 92 , 100000 , "333-23-2322", 9000);
+            chucky.GiveBonus(300);
+            chucky.DisplayStats();
+            Manager fran = new Manager("Fran", 42, 93, 100000, "999-23-3232", 31);
+            fran.GiveBonus(200);
+            fran.DisplayStats();
             Console.ReadLine();
-            PTSalesPerson TestPTSP = new PTSalesPerson("Alex", 24, 93, 500000, "1337-1337", 4000, 4);
-            Console.WriteLine("SalesPerson {0} works {1} hours / day", TestPTSP.Name, TestPTSP.WorkHours);
+            
 
 
         }

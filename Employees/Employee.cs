@@ -59,15 +59,14 @@ namespace Employees
 
          //Методы.
 
-        public void GiveBonus(float amount)
+        public virtual void GiveBonus(float amount) // Виртуальный метод ( Может быть переопределен производным классом.
 
         {
         Pay += amount;
         }
-        public void DisplayStats()
+        public virtual void DisplayStats()
 
         {
-
             Console.WriteLine("Name: {0}", Name);
             Console.WriteLine("ID:{0}", ID);
             Console.WriteLine("Age:{0}", Age);

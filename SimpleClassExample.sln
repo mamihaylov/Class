@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleClassExample", "SimpleClassExample\SimpleClassExample.csproj", "{6E2FAD29-9891-43CC-B4E7-69AA26A1B34D}"
 EndProject
@@ -20,6 +20,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicInheritance", "BasicInheritance\BasicInheritance.csproj", "{764F841A-6FA7-44DF-9D59-036D99C13B02}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Employees", "Employees\Employees.csproj", "{9850BAF6-9798-4385-A689-0B77939BAD0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapes", "Shapes\Shapes.csproj", "{63ABA3E8-5279-44AD-BB2A-0963A7F847C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{9850BAF6-9798-4385-A689-0B77939BAD0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9850BAF6-9798-4385-A689-0B77939BAD0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9850BAF6-9798-4385-A689-0B77939BAD0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63ABA3E8-5279-44AD-BB2A-0963A7F847C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63ABA3E8-5279-44AD-BB2A-0963A7F847C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63ABA3E8-5279-44AD-BB2A-0963A7F847C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63ABA3E8-5279-44AD-BB2A-0963A7F847C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

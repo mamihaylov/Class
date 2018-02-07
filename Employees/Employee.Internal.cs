@@ -3,33 +3,75 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace Employees
+
 {
     partial class Employee
+
     {
-        
-        public void DisplayStats() // Обнавленный.
+        public string SocialSecurityNumber
+
         {
-            Console.WriteLine("Name: {0}", empName);
-            Console.WriteLine("ID: {0}", empID);
-            Console.WriteLine("Age: {0}", empAge); // Учитываем возраст.
-            Console.WriteLine("Pay: {0}", currPay);
+            get { return empSSN; }
+
         }
-        // Метод доступа ( Get )
-        public string GetName()
+        public int Age
+
         {
-            return empName;
+            get { return empAge; }
+            set { empAge = value; }
+
         }
-        // метод изменения ( Set )
-        public void SetName(string name)
+             public string Name
+
         {
-            if (name.Length > 15)
-                //Ошибка, имя должно иметь меньше 16 символов.
-                Console.WriteLine("Error! Name must be less than 16 characters!");
-            else
-                empName = name;
+            get { return empName; }
+            set
+
+            {
+            if (value.Length > 15)
+                 Console.WriteLine("Error! Name must be less than 16 chars!");
+                else
+                empName = value;
+
+            }
+
         }
+
+        public int ID
+
+        {
+        get { return empID; }
+        set { empID = value; }
+
+        }
+
+        public float Pay
+
+        {
+            get { return currPay; }
+            set { currPay = value; }
+         }
+
+        public Employee() { }
+        public Employee(string name, int id, float pay)
+
+            : this(name, 0, id, pay, "") { }
+
+        public Employee(string name, int age, int id, float pay, string ssn)
+
+        {
+
+            Name = name;
+            Age = age;
+            ID = id;
+            Pay = pay;
+            empSSN = ssn;
+
+        }
+
+
+
     }
 
 }

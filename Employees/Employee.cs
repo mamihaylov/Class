@@ -1,64 +1,84 @@
 ﻿using System;
+
 using System.Collections.Generic;
+
 using System.Linq;
+
 using System.Text;
+
 using System.Threading.Tasks;
 
+
+
 namespace Employees
+
 {
+
     partial class Employee
+
     {
-        //поля данных
-        private string empName;
-        private int empID;
-        private float currPay;
-        private int empAge;
-        //Свойство
 
-    
-        public int Age
-        {
-            get { return empAge; }
-            set { empAge = value; }
-        }
-        public string Name
-        {
-            get { return empName;}
-            set { empName = value; }
-        }
-       
+    public class BenefitPackage
 
-        //Методы.
-        public void GiveBonus (float amount)
         {
-            currPay += amount;
+            public double ComputePayDeduction()
+
+            {
+
+                return 125.0;
+
+            }
+
         }
 
-        // Конструкторы .
-        public Employee() { }
-        public Employee(string name, int id, float pay)
-            : this(name, 0, id, pay) { } // ссылаемся на гл.конструктор.
-        public Employee(string name, int age, int id, float pay)
-        {
-            empName = name;
-            empID = id;
-            empAge = age;
-            currPay = pay;
-        }
 
-        // Сотрудники имеют льготы.
+
+        //Перем.
+
+        protected string empName;
+        protected int empID;
+        protected float currPay;
+        protected int empAge;
+        protected string empSSN;
         protected BenefitPackage empBenefits = new BenefitPackage();
+
+
+
         public double GetBenefitCost()
+
         { return empBenefits.ComputePayDeduction(); }
 
         public BenefitPackage Benefits
+
         {
+
             get { return empBenefits; }
             set { empBenefits = value; }
+
         }
+
+         //Методы.
+
+        public void GiveBonus(float amount)
+
+        {
+        Pay += amount;
+        }
+        public void DisplayStats()
+
+        {
+
+            Console.WriteLine("Name: {0}", Name);
+            Console.WriteLine("ID:{0}", ID);
+            Console.WriteLine("Age:{0}", Age);
+            Console.WriteLine("Pay: {0}", Pay);
+
+        }
+
+
+
+
+
     }
 
-       
-        
-    
 }

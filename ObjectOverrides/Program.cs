@@ -1,14 +1,25 @@
-﻿using System;
+﻿
+using System;
+
 using System.Collections.Generic;
+
 using System.Linq;
+
 using System.Text;
+
 using System.Threading.Tasks;
 
+
+
 namespace ObjectOverrides
+
 {
     class Program
+
     {
+
         static void Main(string[] args)
+
         {
             Console.WriteLine("**** Fun with system.object ****\n");
             Person p1 = new Person();
@@ -28,6 +39,27 @@ namespace ObjectOverrides
             }
             Console.ReadLine();
 
+
+
+
+            Person p3 = new Person("Sally", "Jones", 4);
+
+            Person p4 = new Person("Sally", "Jones", 4);
+
+            Console.WriteLine("P3 and P4 have same state: {0}", object.Equals(p3, p4));
+
+            Console.WriteLine("P3 nad P4 are pointing to same object: {0}", object.ReferenceEquals(p3, p4));
+
+
+
+
+
+
+
+            Console.ReadLine();
+
         }
+
     }
+
 }

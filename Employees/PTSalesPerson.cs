@@ -10,7 +10,7 @@ namespace Employees
         sealed class PTSalesPerson : Salesperson
         {
             public int WorkHours { get; set; }
-            public PTSalesPerson(string fullName, int age, int empID, float currPay, string ssn, int numbOfSales, int wh)
+            public PTSalesPerson(string fullName, int age, int empID, float currPay, string ssn, int numbOfSales)
                 : base(fullName, age, empID, currPay, ssn, numbOfSales)
             {
                

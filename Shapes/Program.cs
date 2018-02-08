@@ -21,8 +21,9 @@ namespace Shapes
                 s.Draw();
                 
             }
-
             Console.ReadLine();
+
+            
         }
     }
 }

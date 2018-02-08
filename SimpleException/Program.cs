@@ -22,12 +22,18 @@ namespace SimpleException
                 for (int i = 0; i < 10; i++)
                     myCar.Accelerate(10);
             }
+            // Свойство TargetSite в действительности возвращает обьект MethodBase.
             catch(Exception e)
             {
                 Console.WriteLine("\n *** Error! ***"); // Ошибка
-                Console.WriteLine("Method : {0}", e.TargetSite); // Метод
+                Console.WriteLine("Member name: {0}", e.TargetSite); // Имя члена
+                Console.WriteLine("Class defining member: {0}", 
+                    e.TargetSite.DeclaringType); // Класс, определяющий член
+                Console.WriteLine("Member Type : {0}", e.TargetSite.MemberType); //Тип члена
+
                 Console.WriteLine("Message : {0}", e.Message); // сообщение
                 Console.WriteLine("Source : {0}", e.Source); // источник
+                Console.WriteLine("Stack: {0}", e.StackTrace); // Стек
             }
             /* Ошибка была обработанна, продолжается выполнение
              * следующего оператора.*/

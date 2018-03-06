@@ -46,8 +46,12 @@ namespace SimpleException
                 {
                     carIsDead = true;
                     CurrentSpeed = 0;
-                    // Использовать ключевое слово  throw для генерации исключение
-                    throw new Exception(string.Format("{0} has overheated! :", PetName));
+                   //Создать локальную переменную перед генерацией обьекта Exception.
+                   //Что бы можно было обратиться к свойству HelpLink.
+                   Exception ex =
+                    new Exception(string.Format("{0} has overheated! :", PetName));
+                    ex.HelpLink = "http://www.CarsRUs.com";
+                    throw ex;
                 }
                 else
                     Console.WriteLine("=> CurrentSpeed = {0}", CurrentSpeed);            }

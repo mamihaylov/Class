@@ -19,7 +19,7 @@ namespace CustomException
             CauseOfError = cause;
             ErrorTimeStamp = time;
         }
-        // Переопредеоение свойства Exception.Message.
+        // Переопредеоение свойства Exception.Message..
         public override string Message
         {
             get

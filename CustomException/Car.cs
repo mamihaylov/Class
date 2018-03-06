@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SimpleException
+namespace CustomException
 {
     class Car
     {
@@ -48,12 +48,10 @@ namespace SimpleException
                     CurrentSpeed = 0;
                    //Создать локальную переменную перед генерацией обьекта Exception.
                    //Что бы можно было обратиться к свойству HelpLink.
-                   Exception ex =
-                    new Exception(string.Format("{0} has overheated! :", PetName));
+                   
+                    CarIsDeadException ex =
+                    new CarIsDeadException(string.Format("{0} has overheated!", PetName), "You have a lead foot", DateTime.Now);
                     ex.HelpLink = "http://www.CarsRUs.com";
-                    // Указать спец данные касающиеся ошибки.
-                    ex.Data.Add("TimeStamp", string.Format("The car exploded at {0}", DateTime.Now)); // Метка времени.
-                    ex.Data.Add("Cause","You have a lead foot."); // Причина.
                     throw ex;
                 }
                 else

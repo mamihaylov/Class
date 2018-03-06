@@ -34,6 +34,7 @@ namespace SimpleException
                 Console.WriteLine("Message : {0}", e.Message); // сообщение
                 Console.WriteLine("Source : {0}", e.Source); // источник
                 Console.WriteLine("Stack: {0}", e.StackTrace); // Стек
+                Console.WriteLine("HelpLink: {0}", e.HelpLink);
             }
             /* Ошибка была обработанна, продолжается выполнение
              * следующего оператора.*/
